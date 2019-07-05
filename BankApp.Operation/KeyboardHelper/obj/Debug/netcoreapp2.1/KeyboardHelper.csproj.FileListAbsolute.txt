@@ -1,0 +1,9 @@
+D:\DevEnv\Banking\BankApp.Operation\KeyboardHelper\bin\Debug\netcoreapp2.1\KeyboardHelper.deps.json
+D:\DevEnv\Banking\BankApp.Operation\KeyboardHelper\bin\Debug\netcoreapp2.1\KeyboardHelper.dll
+D:\DevEnv\Banking\BankApp.Operation\KeyboardHelper\bin\Debug\netcoreapp2.1\KeyboardHelper.pdb
+D:\DevEnv\Banking\BankApp.Operation\KeyboardHelper\obj\Debug\netcoreapp2.1\KeyboardHelper.csproj.CoreCompileInputs.cache
+D:\DevEnv\Banking\BankApp.Operation\KeyboardHelper\obj\Debug\netcoreapp2.1\KeyboardHelper.AssemblyInfoInputs.cache
+D:\DevEnv\Banking\BankApp.Operation\KeyboardHelper\obj\Debug\netcoreapp2.1\KeyboardHelper.AssemblyInfo.cs
+D:\DevEnv\Banking\BankApp.Operation\KeyboardHelper\obj\Debug\netcoreapp2.1\KeyboardHelper.dll
+D:\DevEnv\Banking\BankApp.Operation\KeyboardHelper\obj\Debug\netcoreapp2.1\KeyboardHelper.pdb
+D:\DevEnv\Banking\BankApp.Operation\KeyboardHelper\obj\Debug\netcoreapp2.1\KeyboardHelper.csprojAssemblyReference.cache

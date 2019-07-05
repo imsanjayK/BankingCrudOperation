@@ -6,14 +6,6 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.1": {
-      "BankApp/1.0.0": {
-        "dependencies": {
-          "KeyboardHelper": "1.0.0"
-        },
-        "runtime": {
-          "BankApp.dll": {}
-        }
-      },
       "KeyboardHelper/1.0.0": {
         "runtime": {
           "KeyboardHelper.dll": {}
@@ -22,11 +14,6 @@
     }
   },
   "libraries": {
-    "BankApp/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "KeyboardHelper/1.0.0": {
       "type": "project",
       "serviceable": false,

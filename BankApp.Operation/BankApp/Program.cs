@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Support.KeyboardHelper;
+using System;
 
 namespace BankApp
 {
@@ -7,6 +8,7 @@ namespace BankApp
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            KeyboardHelper.ReadNumber("R");
         }
     }
 }

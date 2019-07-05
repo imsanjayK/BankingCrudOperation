@@ -207,16 +207,6 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
-      },
-      "KeyboardHelper/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.1",
-        "compile": {
-          "bin/placeholder/KeyboardHelper.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/KeyboardHelper.dll": {}
-        }
       }
     }
   },
@@ -690,16 +680,10 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
-    },
-    "KeyboardHelper/1.0.0": {
-      "type": "project",
-      "path": "../KeyboardHelper/KeyboardHelper.csproj",
-      "msbuildProject": "../KeyboardHelper/KeyboardHelper.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
-      "KeyboardHelper >= 1.0.0",
       "Microsoft.NETCore.App >= 2.1.0"
     ]
   },
@@ -710,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DevEnv\\Banking\\BankApp.Operation\\BankApp\\BankApp.csproj",
-      "projectName": "BankApp",
-      "projectPath": "D:\\DevEnv\\Banking\\BankApp.Operation\\BankApp\\BankApp.csproj",
+      "projectUniqueName": "D:\\DevEnv\\Banking\\BankApp.Operation\\KeyboardHelper\\KeyboardHelper.csproj",
+      "projectName": "KeyboardHelper",
+      "projectPath": "D:\\DevEnv\\Banking\\BankApp.Operation\\KeyboardHelper\\KeyboardHelper.csproj",
       "packagesPath": "C:\\Users\\40005158\\.nuget\\packages\\",
-      "outputPath": "D:\\DevEnv\\Banking\\BankApp.Operation\\BankApp\\obj\\",
+      "outputPath": "D:\\DevEnv\\Banking\\BankApp.Operation\\KeyboardHelper\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -732,11 +716,7 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {
-            "D:\\DevEnv\\Banking\\BankApp.Operation\\KeyboardHelper\\KeyboardHelper.csproj": {
-              "projectPath": "D:\\DevEnv\\Banking\\BankApp.Operation\\KeyboardHelper\\KeyboardHelper.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -749,6 +729,7 @@
       "netcoreapp2.1": {
         "dependencies": {
           "Microsoft.NETCore.App": {
+            "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true

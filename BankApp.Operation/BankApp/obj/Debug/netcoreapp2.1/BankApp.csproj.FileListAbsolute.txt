@@ -12,3 +12,17 @@ D:\DevEnv\Banking\BankApp.Operation\BankApp\bin\Debug\netcoreapp2.1\KeyboardHelp
 D:\DevEnv\Banking\BankApp.Operation\BankApp\bin\Debug\netcoreapp2.1\KeyboardHelper.pdb
 D:\DevEnv\Banking\BankApp.Operation\BankApp\obj\Debug\netcoreapp2.1\BankApp.csprojAssemblyReference.cache
 D:\DevEnv\Banking\BankApp.Operation\BankApp\obj\Debug\netcoreapp2.1\BankApp.csproj.CopyComplete
+F:\DevEnv\CshapeProject\BankingCrudOperation\BankApp.Operation\BankApp\bin\Debug\netcoreapp2.1\BankApp.deps.json
+F:\DevEnv\CshapeProject\BankingCrudOperation\BankApp.Operation\BankApp\bin\Debug\netcoreapp2.1\BankApp.runtimeconfig.json
+F:\DevEnv\CshapeProject\BankingCrudOperation\BankApp.Operation\BankApp\bin\Debug\netcoreapp2.1\BankApp.runtimeconfig.dev.json
+F:\DevEnv\CshapeProject\BankingCrudOperation\BankApp.Operation\BankApp\bin\Debug\netcoreapp2.1\BankApp.dll
+F:\DevEnv\CshapeProject\BankingCrudOperation\BankApp.Operation\BankApp\bin\Debug\netcoreapp2.1\BankApp.pdb
+F:\DevEnv\CshapeProject\BankingCrudOperation\BankApp.Operation\BankApp\bin\Debug\netcoreapp2.1\KeyboardHelper.dll
+F:\DevEnv\CshapeProject\BankingCrudOperation\BankApp.Operation\BankApp\bin\Debug\netcoreapp2.1\KeyboardHelper.pdb
+F:\DevEnv\CshapeProject\BankingCrudOperation\BankApp.Operation\BankApp\obj\Debug\netcoreapp2.1\BankApp.csprojAssemblyReference.cache
+F:\DevEnv\CshapeProject\BankingCrudOperation\BankApp.Operation\BankApp\obj\Debug\netcoreapp2.1\BankApp.csproj.CoreCompileInputs.cache
+F:\DevEnv\CshapeProject\BankingCrudOperation\BankApp.Operation\BankApp\obj\Debug\netcoreapp2.1\BankApp.AssemblyInfoInputs.cache
+F:\DevEnv\CshapeProject\BankingCrudOperation\BankApp.Operation\BankApp\obj\Debug\netcoreapp2.1\BankApp.AssemblyInfo.cs
+F:\DevEnv\CshapeProject\BankingCrudOperation\BankApp.Operation\BankApp\obj\Debug\netcoreapp2.1\BankApp.csproj.CopyComplete
+F:\DevEnv\CshapeProject\BankingCrudOperation\BankApp.Operation\BankApp\obj\Debug\netcoreapp2.1\BankApp.dll
+F:\DevEnv\CshapeProject\BankingCrudOperation\BankApp.Operation\BankApp\obj\Debug\netcoreapp2.1\BankApp.pdb

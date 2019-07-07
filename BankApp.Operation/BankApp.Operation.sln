@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28307.705
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankApp", "BankApp\BankApp.csproj", "{68ED1C63-3AD0-47D8-85D4-C947449D7D97}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyboardHelper", "KeyboardHelper\KeyboardHelper.csproj", "{852A3167-7FB7-4115-A6B9-3633D9076181}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KeyboardHelper", "KeyboardHelper\KeyboardHelper.csproj", "{852A3167-7FB7-4115-A6B9-3633D9076181}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

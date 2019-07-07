@@ -1,5 +1,8 @@
-﻿using Support.KeyboardHelper;
+﻿using BankApp.Model;
+using BankApp.Repository;
+using Support.KeyboardHelper;
 using System;
+using System.Collections.Generic;
 
 namespace BankApp
 {
@@ -7,8 +10,22 @@ namespace BankApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            KeyboardHelper.ReadNumber("R");
+            Customer c = new Customer()
+            {
+                Balance=0
+            };
+            Collection repo = new Collection();
+            List<Customer> list = repo.CustomersList();
+            
+            
+            ATM atm = new ATM()
+            {
+                TotalAmount = 10.89,
+                Transactions = list
+            };
+            Banking banking = new Banking();
+            banking.Customers = list;
+            Console.WriteLine(banking.Deposit(atm,c));
         }
     }
 }

@@ -21,36 +21,54 @@ namespace BankApp.Model
         public bool Deposit(ATM atm, Customer currentCustomer)
         {
 
-            if (validateCustomer(atm, currentCustomer))
+            if (validateCustomer(currentCustomer))
             {
                 var depositAmount = KeyboardHelper.ReadNumber("Deposite Amount:");
                 atm.TotalAmount += depositAmount;
                 atm.Transactions.Add(currentCustomer);
-                currentCustomer.Transaction.Add(depositAmount);
+                currentCustomer.Transactions.Add(new Transaction("Deposite",depositAmount));
                 currentCustomer.Balance += depositAmount;
                 return true;
             }
             return false;
         }
-
-        public List<Customer> Customers { get => customers; set => customers = value; }
 
         public bool Withdraw(ATM atm, Customer currentCustomer)
         {
 
-            if (validateCustomer(atm, currentCustomer))
+            if (validateCustomer(currentCustomer))
             {
-                var depositAmount = KeyboardHelper.ReadNumber("Deposite Amount:");
-                atm.TotalAmount -= depositAmount;
-                atm.Transactions.Add(currentCustomer);
-                currentCustomer.Transaction.Add(depositAmount);
-                currentCustomer.Balance += depositAmount;
-                return true;
+                var withdrawAmount = KeyboardHelper.ReadNumber("Withdraw Amount:");
+                if (withdrawAmount <= atm.TotalAmount && withdrawAmount <= currentCustomer.Balance)
+                {
+                    atm.TotalAmount -= withdrawAmount;
+                    atm.Transactions.Add(currentCustomer);
+                    currentCustomer.Transactions.Add(new Transaction("Withdraw", withdrawAmount));
+                    currentCustomer.Balance -= withdrawAmount;
+                    return true;
+                }
             }
             return false;
         }
+        public double Balance(Customer currentCustomer)
+        {
 
-        public bool validateCustomer(ATM atm, Customer currentCustomer)
+            if (validateCustomer(currentCustomer))
+            {
+                return currentCustomer.Balance;
+            }
+            throw new Exception("No transaction occured");
+        }
+        public List<Transaction> ViewTransactions(Customer currentCustomer)
+        {
+
+            if (validateCustomer(currentCustomer) && currentCustomer.Transactions.Count >= 1)
+            {
+                return currentCustomer.Transactions;
+            }
+            throw new Exception("No transaction occured");
+        }
+        private bool validateCustomer(Customer currentCustomer)
         {
             //Stopwatch stopWatch = new Stopwatch();
             //stopWatch.Start();

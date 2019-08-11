@@ -11,17 +11,17 @@ namespace BankApp.Model
         private int cardNo;
         private Card cardType;
         private double balance;
-        private List<double> transaction;
+        private List<Transaction> transactions;
 
         public int CustomerID { get => customerID; set => customerID = value; }
         public int CardNo { get => cardNo; set => cardNo = value; }
         public string Name { get => name; set => name = value; }
         public Card CardType { get => cardType; set => cardType = value; }
         public double Balance { get => balance; set => balance = value; }
-        public List<double> Transaction { get => transaction; set => transaction = value; }
+        public List<Transaction> Transactions { get => transactions; set => transactions = value; }
         public Customer()
         {
-            Transaction = new List<double>();
+            Transactions = new List<Transaction>();
         }
 
         public override string ToString()
@@ -41,6 +41,17 @@ namespace BankApp.Model
         public override int GetHashCode()
         {
             return HashCode.Combine(CustomerID, CardNo, Name);
+        }
+    }
+    public class Transaction
+    {
+        public string type { set; get; }
+        public double amount { set; get; }
+
+        public Transaction(string type, double amount)
+        {
+            this.type = type;
+            this.amount = amount;
         }
     }
 

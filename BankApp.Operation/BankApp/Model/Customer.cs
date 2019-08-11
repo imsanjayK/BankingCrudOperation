@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BankApp.Model
 {
-    public class Customer
+    class Customer
     {
         private int customerID;
         private string name;
@@ -19,6 +19,15 @@ namespace BankApp.Model
         public Card CardType { get => cardType; set => cardType = value; }
         public double Balance { get => balance; set => balance = value; }
         public List<double> Transaction { get => transaction; set => transaction = value; }
+        public Customer()
+        {
+            Transaction = new List<double>();
+        }
+
+        public override string ToString()
+        {
+            return base.ToString();
+        }
 
         public override bool Equals(object obj)
         {
@@ -26,7 +35,7 @@ namespace BankApp.Model
             return customer != null &&
                    CustomerID == customer.CustomerID &&
                    CardNo == customer.CardNo &&
-                   Name == customer.Name;
+                   Name.ToLower().Trim() == customer.Name.ToLower().Trim();
         }
 
         public override int GetHashCode()

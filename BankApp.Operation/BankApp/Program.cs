@@ -8,24 +8,31 @@ namespace BankApp
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Customer c = new Customer()
+            Customer customer = new Customer
             {
-                Balance=0
+                CustomerID = 124,
+                Name = "sanjay ",
+                CardNo = 123456,
+                //CardType = Card.MASTER,
+                Balance = 123,
+               // Transaction = new List<double>()
             };
-            Collection repo = new Collection();
-            List<Customer> list = repo.CustomersList();
-            
-            
-            ATM atm = new ATM()
-            {
-                TotalAmount = 10.89,
-                Transactions = list
-            };
+
+            CustomerCollection repository = new CustomerCollection();
+            List<Customer> list = repository.CustomersList();
             Banking banking = new Banking();
             banking.Customers = list;
-            Console.WriteLine(banking.Deposit(atm,c));
+
+            ATM atm = new ATM()
+            {
+                TotalAmount = 100.99
+            };
+            Console.WriteLine("tff"+customer.CardType+"em");
+            // var valid = banking.validateCustomer(atm, customer);
+            var deposit = banking.Deposit(atm, customer);
+           
         }
     }
 }

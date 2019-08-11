@@ -8,8 +8,11 @@ namespace BankApp.Model
     {
         private double totalAmount;
         private List<Customer> transactions;
-
         public List<Customer> Transactions { get => transactions; set => transactions = value; }
         public double TotalAmount { get => totalAmount; set => totalAmount = value; }
+        public ATM()
+        {
+            Transactions = new List<Customer>();
+        }
     }
 }
